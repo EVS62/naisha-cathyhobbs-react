@@ -3,7 +3,7 @@ import './Header.css';
 
 const navItems = [
   { label: 'About', children: [
-    { group: 'About', links: [['The Company', '#'], ['Naisha Rivera', '#'], ['Press', '#']] },
+    { group: 'About', links: [['The Company', '#home'], ['Naisha Rivera', '#about'], ['Press', '#home']] },
   ]},
   { label: 'Portfolio', children: [
     { group: null, links: [['All Projects', '#portfolio'], ['Before & After', '#portfolio']] },
@@ -39,7 +39,7 @@ export default function Header() {
                 className="header__nav-item"
                 onMouseEnter={() => setOpen(item.label)}
               >
-                <a href={item.children ? '#' : '#'} className="header__nav-link">
+                <a href="#home" className="header__nav-link">
                   {item.label} {item.children && <span>▾</span>}
                 </a>
                 {item.children && open === item.label && (
@@ -69,7 +69,7 @@ export default function Header() {
         {mobileOpen && (
           <div className="header__mobile-menu">
             {navItems.map(item => (
-              <a key={item.label} href={item.label === 'Portfolio' ? '#portfolio' : item.label === 'Services' ? '#services' : '#'} className="header__mobile-link" onClick={() => setMobileOpen(false)}>
+              <a key={item.label} href={item.label === 'Portfolio' ? '#portfolio' : item.label === 'Services' ? '#services' : '#home'} className="header__mobile-link" onClick={() => setMobileOpen(false)}>
                 {item.label}
               </a>
             ))}

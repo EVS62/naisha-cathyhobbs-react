@@ -51,12 +51,12 @@ export default function Footer() {
       <div className="footer__bottom">
         <p>© {new Date().getFullYear()} Interiors by Naisha. All Rights Reserved.</p>
         <div className="footer__social">
-          <a href="#">Instagram</a>
-          <a href="#">Pinterest</a>
-          <a href="#">Houzz</a>
-          <a href="#">LinkedIn</a>
+          <a href="#home">Instagram</a>
+          <a href="#home">Pinterest</a>
+          <a href="#home">Houzz</a>
+          <a href="#home">LinkedIn</a>
         </div>
-        <a href="#" className="footer__terms">Terms &amp; Conditions</a>
+        <a href="#home" className="footer__terms">Terms &amp; Conditions</a>
       </div>
     </footer>
   );
