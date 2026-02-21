@@ -24,19 +24,15 @@
   padding: 0 40px;
   height: 76px;
 }
-.header__logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
-.header__logo-main {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  color: var(--navy);
-  letter-spacing: 0.04em;
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.header__logo-sub {
-  font-size: 0.6rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 600;
+.header__logo-img {
+  height: 72px;
+  width: auto;
+  filter: brightness(0);
 }
 .header__nav { display: flex; align-items: center; gap: 4px; }
 .header__nav-item { position: relative; }

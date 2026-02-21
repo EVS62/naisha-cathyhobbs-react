@@ -11,6 +11,13 @@
   gap: 48px;
   margin-bottom: 48px;
 }
+.footer__logo-img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 16px;
+  display: block;
+}
 .footer__logo-main {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;

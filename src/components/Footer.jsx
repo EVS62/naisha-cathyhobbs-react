@@ -5,8 +5,7 @@ export default function Footer() {
     <footer className="footer" id="contact">
       <div className="footer__grid">
         <div className="footer__brand">
-          <div className="footer__logo-main">Interiors by Naisha</div>
-          <div className="footer__logo-sub">Interior Design &amp; Staging</div>
+          <img src="/logo.png" alt="Interiors by Naisha" className="footer__logo-img" />
           <p>A full-service residential interior design and staging studio serving New York City and the tri-state region. We create spaces that are unmistakably, beautifully yours.</p>
           <p className="footer__contact-info">
             ✉ info@interiorsbynaisha.com<br />

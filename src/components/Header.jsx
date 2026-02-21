@@ -28,8 +28,7 @@ export default function Header() {
       <header className="header" onMouseLeave={() => setOpen(null)}>
         <div className="header__inner">
           <a href="#home" className="header__logo">
-            <span className="header__logo-main">Interiors by Naisha</span>
-            <span className="header__logo-sub">Interior Design &amp; Staging</span>
+            <img src="/logo.png" alt="Interiors by Naisha" className="header__logo-img" />
           </a>
 
           <nav className="header__nav">
