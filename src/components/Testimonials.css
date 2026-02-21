@@ -1,0 +1,44 @@
+.testimonials {
+  background: var(--navy);
+  padding: 80px 40px;
+}
+.testimonials__inner { max-width: 1280px; margin: 0 auto; }
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.testi-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 32px 28px;
+  border-radius: 2px;
+}
+.testi-card__stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 16px; letter-spacing: 2px; }
+.testi-card p {
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 24px;
+}
+.testi-card__author { display: flex; align-items: center; gap: 12px; }
+.testi-card__avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.testi-card__name { font-weight: 600; font-size: 0.82rem; color: #fff; }
+.testi-card__loc { font-size: 0.72rem; color: rgba(255,255,255,0.4); }
+
+@media (max-width: 900px) {
+  .testimonials__grid { grid-template-columns: 1fr; }
+  .testimonials { padding: 60px 24px; }
+}

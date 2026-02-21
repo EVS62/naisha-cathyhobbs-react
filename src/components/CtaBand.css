@@ -1,0 +1,12 @@
+.cta-band {
+  background: var(--gold);
+  padding: 56px 40px;
+  text-align: center;
+}
+.cta-band h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 12px;
+}
+.cta-band p { color: rgba(255,255,255,0.85); font-size: 0.9rem; margin-bottom: 28px; }
